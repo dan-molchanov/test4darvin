@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Darvin Test</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header_info_section">
+        <div class="header_info_section_img"><img class="img header_info_section_logo" src="img/logo.png"
+                                                  alt=""></div>
+        <div class="header_info_section_telephone_and_time"><span
+                class="header_info_section_telephone_and_time_img"><img class="img header_info_section_telephone_png"
+                                                                        src="img/ic.png" alt=""></span>
+            <div class="header_info_section_telephone_and_time_text"><span class="header_info_section_time_text">С 9:00 до 18:00</span><br><span
+                    class="header_info_section_telephone_text">+7 (000) 000-00-00</span></div>
+        </div>
+        <div class="header_info_section_buttons">
+            <button class="button header_info_button_to_call">Перезвоните мне</button>
+            <button class="button header_info_button_to_request">Оставить заявку</button>
+        </div>
+        <button onclick="openMenu()" class="header_menu_button_responsive"></button>
+    </div>
+    <div class="header_menu_section">
+        <ul class="header_menu_section_ul">
+            <li><a href="">О компании</a></li>
+            <li onclick="openDrop()" class="li_with_drop"><a class="link_with_drop" href="">Каталог</a>
+                <ul class="drop_menu">
+                    <li><a href="">Пункт номер один</a></li>
+                    <li><a href="">Пункт номер два</a></li>
+                    <li><a href="">Пункт номер три</a></li>
+                    <li><a href="">Пункт номер четыре</a></li>
+                </ul>
+            </li>
+            <li><a href="">Доставка и оплата</a></li>
+            <li><a href="">Отзывы</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Статьи</a></li>
+            <li><a href="">Фотогалерея</a></li>
+            <li><a href="">Контакты</a></li>
+        </ul>
+    </div>
+</header>
+<section class="desktop_slider_section">
+    <div class="desktop_slider_div">
+        <div class="item"><img src="img/slide-img.png" alt="Первый слайд">
+            <div class="desktop_slider_text"><span class="desktop_slider_title">Найдите новую одежду</span> <span
+                    class="desktop_slider_description">Обновите ваш гардероб к новому сезону!</span></div>
+        </div>
+        <div class="item"><img src="img/slide-img.png" alt="Второй слайд">
+            <div class="desktop_slider_text"><span class="desktop_slider_title">Заголовок слайда 2</span> <span
+                    class="desktop_slider_description">Заголовок слайда 2</span></div>
+        </div>
+        <div class="item"><img src="img/slide-img.png" alt="Третий слайд">
+            <div class="desktop_slider_text"><span class="desktop_slider_title">Заголовок слайда 3</span> <span
+                    class="desktop_slider_description">Заголовок слайда 3</span></div>
+        </div>
+        <div class="desktop_slider_buttons"><a class="prev" onclick="prevSlide()"><span
+                class="slide_prev_pointer"></span></a> <a class="next" onclick="nextSlide()"><span
+                class="slide_next_pointer"></span></a>
+            <p class="desktop_slider_number_of"></p></div>
+    </div>
+</section>
+<section class="post_section">
+    <div class="post_section_text"><span class="post_container_text_title">Заголовок H1</span> <img
+            class="post_section_img_responsive" src="img/post-img.png" alt=""> <span
+            class="post_container_text_description">Интернет-магазин одежды Stylecloth – это доступные цены, широкий, регулярно обновляемый ассортимент. В онлайн-каталоге Stylecloth представлено около 7000 ведущих брендов женской, мужской и детской одежды и обуви, электроники, книжной продукции, ювелирных изделий, игрушек и т.д. Для удобства пользования онлайн-каталог поделен на разделы, все товары можно сортировать по ряду критериев: цена, материал изготовления, сезонность, бренд.<br><br><span
+            class="post_container_responsive_spoiler">Интернет-магазин Stylecloth регулярно проводит масштабные распродажи, в рамках которых купить одежду и обувь становится еще реальнее. Чтобы быть в курсе предстоящих скидок или появления в ассортименте новых моделей одежды от любимых брендов, достаточно подписаться на email-рассылку магазина. Дополнительные выгодные условия действуют для постоянных покупателей Wildberries – персональная скидка, зависящая от процента выкупа вещей. </span></span>
+        <button onclick="openSpoiler()" class="post_container_spoiler_button">Смотреть полностью</button>
+    </div>
+    <img class="post_section_img" src="img/post-img.png" alt=""></section>
+<section class="clothes_section">
+    <div class="clothes_section_container"><span class="clothes_section_title">Хиты продаж</span>
+        <div class="clothes_section_three_carts">
+            <div class="clothes_section_cart">
+                <button class="clothes_section_button"></button>
+                <div class="clothes_section_img_container"><a href="#"><img class="clothes_section_img"
+                                                                            src="img/first_cart.png" alt=""></a>
+                </div>
+                <span class="clothes_section_cart_title"><a href="#">Плотная рубашка из эластичной плотной джинсовой ткани</a> </span><span
+                    class="clothes_section_cart_price">5 999 &#8381;</span></div>
+            <div class="clothes_section_cart">
+                <button class="clothes_section_button"></button>
+                <div class="clothes_section_img_container"><a href="#"><img class="clothes_section_img"
+                                                                            src="img/second_cart.png"
+                                                                            alt=""></a></div>
+                <span class="clothes_section_cart_title"><a href="#">Футболка с заклепками</a> </span><span
+                    class="clothes_section_cart_price">5 999 &#8381;</span></div>
+            <div class="clothes_section_cart">
+                <button class="clothes_section_button"></button>
+                <div class="clothes_section_img_container"><a href="#"><img class="clothes_section_img"
+                                                                            src="img/third_cart.png" alt=""></a>
+                </div>
+                <span class="clothes_section_cart_title"><a href="#">Футболка с эффектом разрывов</a> </span><span
+                    class="clothes_section_cart_price">5 999 &#8381;</span></div>
+        </div>
+    </div>
+</section>
+<section class="clothes_section_responsive"><span class="clothes_section_title">Хиты продаж</span>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="clothes_section_cart">
+                    <button class="clothes_section_button"></button>
+                    <div class="clothes_section_img_container"><a href="#"><img class="clothes_section_img"
+                                                                                src="img/first_cart.png"
+                                                                                alt=""></a></div>
+                    <span class="clothes_section_cart_title"><a href="#">Плотная рубашка из эластичной плотной джинсовой ткани</a> </span><span
+                        class="clothes_section_cart_price">5 999 &#8381;</span></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="clothes_section_cart">
+                    <button class="clothes_section_button"></button>
+                    <div class="clothes_section_img_container"><a href="#"><img class="clothes_section_img"
+                                                                                src="img/second_cart.png"
+                                                                                alt=""></a></div>
+                    <span class="clothes_section_cart_title"><a href="#">Футболка с заклепками</a> </span><span
+                        class="clothes_section_cart_price">5 999 &#8381;</span></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="clothes_section_cart">
+                    <button class="clothes_section_button"></button>
+                    <div class="clothes_section_img_container"><a href="#"><img class="clothes_section_img"
+                                                                                src="img/third_cart.png"
+                                                                                alt=""></a></div>
+                    <span class="clothes_section_cart_title"><a href="#">Футболка с эффектом разрывов</a> </span><span
+                        class="clothes_section_cart_price">5 999 &#8381;</span></div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<section class="maps_and_callback_section">
+    <div class="maps_and_callback_container"><img class="maps_and_callback_container_img_responsive"
+                                                  src="img/map.png" alt="">
+        <div class="maps_and_callback_form_container"><span class="span maps_and_callback_form_container_title">Связаться с нами</span>
+            <input placeholder="Ваше имя" id="input_name" class="input callback_form_name_input"> <input
+                    placeholder="+ 7" class="input callback_form_number_input"> <input placeholder="Электронная почта"
+                                                                                       class="input callback_form_email_input">
+            <textarea placeholder="Текст сообщения" class="callback_form_textarea" name="comment" cols="40"
+                      rows="3"></textarea>
+            <div class="maps_and_callback_form_container_politics"><label for="politics_checkbox"
+                                                                          class="maps_and_callback_form_container_politics_checkbox_label"><input
+                    type="checkbox" name="politics_checkbox" id="politics_checkbox"
+                    class="maps_and_callback_form_container_politics_checkbox_input"> Согласен с <a href="#"
+                                                                                                    class="politics_link">политикой
+                конфиденциальности</a> <span></span></label></div>
+            <button class="maps_and_callback_form_container_button">Отправить</button>
+        </div>
+    </div>
+</section>
+<script src="js/custom.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>var swiper = new Swiper('.swiper-container', {
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+});</script>
+<script src="main.js"></script>
+</body>
+</html>
