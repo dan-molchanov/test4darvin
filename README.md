@@ -11,7 +11,7 @@
 </h4>
 
 <p align="center">
-   <a href="vk.com/nozhpodrebro" target="_blank">
+   <a href="https://vk.com/nozhpodrebro" target="_blank">
     <img alt="Darvin" src="https://is.gd/EwrH0u" width="32" />
   </a>
 </p>
